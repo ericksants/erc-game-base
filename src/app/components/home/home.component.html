@@ -1,4 +1,34 @@
+<!--
 <p>home.component works!</p>
+
+
 <div>
-  <a routerLink="/dashboard">Go to Dashboard</a>
+  // Buttons to toggle MyBoolean
+  <button (click)="toggleBoolean(true)">Set True</button>
+  <button (click)="toggleBoolean(false)">Set False</button>
+  <p>MyBoolean is: {{ myBoolean }}</p>
 </div>
+
+
+<div>
+  <button routerLink="/profile">Go to Profile</button>
+</div>
+
+//Conditional rendering based on deveMostrarTitulo
+@if(deveMostrarTitulo) {
+  <h1>Welcome to the Home Component!</h1>
+}@else{
+  <h1>The title is hidden.</h1>
+}
+//Looping through listItens
+@for (item of listItens; track item) {
+  <p>{{ item }}</p>
+}
+  -->
+
+ <!-- Displaying the value passed from AppComponent1 -->
+<h1>{{minhaPropiedadeDeFora}}</h1>
+<div>
+ <button (click)="submit()">Submit Form</button>
+</div>
+
